@@ -1,8 +1,5 @@
 
-# HopeTrack – Skill & Habit Consistency Tracker
-# Beginner-friendly Python project (1st Semester)
-
-items = {}  # stores habits/skills as: {name: [completed_days, total_days]}
+items = {}  
 
 while True:
     print("\n=== HopeTrack – Skill & Habit Consistency Tracker ===")
@@ -28,10 +25,10 @@ while True:
         if name in items:
             done = input("Was this completed today? (yes/no): ")
 
-            items[name][1] += 1  # total days
+            items[name][1] += 1 
 
             if done.lower() == "yes":
-                items[name][0] += 1  # completed days
+                items[name][0] += 1  
 
             print("Activity logged successfully.")
         else:
@@ -61,4 +58,5 @@ while True:
         break
 
     else:
+
         print("Invalid selection. Please choose a valid option (1–4).")
